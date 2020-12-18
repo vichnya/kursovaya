@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<script type="text/javascript">
+		
+	var a = prompt("Введите величину угла падения. \nДоступные величины 30, 45, 60 градусов."); 
+	const pi = 3.1415926535;
+	const n1 = 1.0003;
+ 	const n2 = 1.33;
+	var rada = (a*pi)/180;
+	var sina = Math.sin(rada);
+ 
+ 
+ 	var sinb = (n1*sina.toFixed(2))/n2;
+ 	var radab = Math.asin(sinb);
+ 	var b = (180*radab.toFixed(2))/pi;
+
+ 	alert("Угол преломления : " + b.toFixed(2) +" градусов");
+
+ 	if (a == '30') {
+	location.href = 'gr30.html';
+	} else if (a == '60') {
+	location.href = 'gr60.html';
+	} else if ( a== '45')     {
+	location.href = 'gr45.html';
+	}   		
+
+</script>
+
+<body>
+	<header>
+		
+		<img src="img/555.png" height="72" width="562" alt="">
+	
+	</header>
+	
+	<main>
+		
+		<h1>Визуализатор преломления луча на границе воздуха и воды</h1>
+		<p class="forimg"><img src="img/000.png" height="544" width="539" alt=""></p>
+		<p class="forknopka"><a href="main.html"><img src="img/pusk.png" height="266" width="263" left="1130" top="714" border-radius="0" alt=""></a></p>
+
+	</main>
+		
+		
+</body>
+
+</html>

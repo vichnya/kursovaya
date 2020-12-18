@@ -1,0 +1,45 @@
+body {
+
+	font-family: Roboto, sans-serif;
+  	background: #31369C;
+
+}
+
+header {
+
+	display: flex;
+	flex-direction: left;
+	height: 72px;
+	background: #191F59;
+}
+
+main {
+
+	width:800px;
+	margin: 0 auto;
+
+
+}
+
+
+h1 {
+
+	font-size: 50px;
+
+	text-align: center;
+	color: rgba(194, 226, 255, 0.93);
+	top: ;ext-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.forimg {
+	
+	text-align:center;
+}
+
+.forknopka {
+
+	text-align:right;
+
+}
+		
